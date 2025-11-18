@@ -19,7 +19,7 @@ pipeline {
         sh 'docker build -t todo .'
         
         // Run the container with a specific name (e.g., 'todo_container')
-        sh 'docker run -d -p 8000:800 --name todo_container todo'
+        sh 'docker run -d -p 800:800 --name todo_container todo'
       }
       post {
         always {
